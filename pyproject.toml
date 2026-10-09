@@ -1,7 +1,7 @@
 [project]
 name = "ai-agent-project"
 version = "0.1.0"
-description = "Add your description here"
+description = "AI research agent with tool calling"
 readme = "README.md"
 authors = [
     { name = "rxuantang", email = "276703362+rxuantang@users.noreply.github.com" }
@@ -14,12 +14,12 @@ dependencies = [
     "streamlit>=1.64.0",
 ]
 
-[project.scripts]
-ai-agent-project = "ai_agent_project:main"
-
 [build-system]
 requires = ["uv_build>=0.12.3,<0.13.0"]
 build-backend = "uv_build"
+
+[tool.uv.build-backend]
+module-name = "ai_agent"
 
 [dependency-groups]
 dev = [
